@@ -18,11 +18,11 @@ set.seed(123)
 
 #### Load and process test dataset ####
 #######################################
-gse21815 <- getGEO("GSE21815", destdir = "Data/")
-gse106582 <- getGEO("GSE106582", destdir = "Data/")
+gse21815 <- getGEO(" ", destdir = "Data/")
+gse106582 <- getGEO(" ", destdir = "Data/")
 
-gse21815 <- gse21815[[1]]
-gse106582 <- gse106582[[1]]
+gse21815 <- gse [[1]]
+gse106582 <- gse [[1]]
 
 expr21815 <- exprs(gse21815)
 expr106582 <- exprs(gse106582)
@@ -620,3 +620,4 @@ saveRDS(svm.fit, "Results/trainEvaluateML/SVM.rds")
 saveRDS(nn, "Results/trainEvaluateML/ANN.rds")
 saveRDS(gbm, "Results/trainEvaluateML/GBM.rds")
 ##################
+
