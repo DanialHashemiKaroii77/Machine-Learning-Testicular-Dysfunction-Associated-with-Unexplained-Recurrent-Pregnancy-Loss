@@ -11,11 +11,11 @@ setwd(project_path)
 
 #### Load data ####
 ###################
-gse10950 <- getGEO("GSE10950", destdir = "Data/")
-gse25070 <- getGEO("GSE25070", destdir = "Data/")
-gse41328 <- getGEO("GSE41328", destdir = "Data/")
-gse74602 <- getGEO("GSE74602", destdir = "Data/")
-gse142279 <- getGEO("GSE142279", destdir = "Data/")
+gse10950 <- getGEO(" ", destdir = "Data/")
+gse25070 <- getGEO(" ", destdir = "Data/")
+gse41328 <- getGEO(" ", destdir = "Data/")
+gse74602 <- getGEO(" ", destdir = "Data/")
+gse142279 <- getGEO(" ", destdir = "Data/")
 
 gse10950 <- gse10950[[1]]
 gse25070 <- gse25070[[1]]
@@ -310,4 +310,5 @@ mergedExpr$group <- as.numeric(mergedExpr$group)
 for(x in 3:ncol(mergedExpr)) mergedExpr[,x] <- as.numeric(mergedExpr[,x])
 
 write.csv(mergedExpr, "Results/mergeDatasets/mergeDatasets.csv")
+
 ##########################
